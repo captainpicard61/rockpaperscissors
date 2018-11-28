@@ -8,13 +8,17 @@
 
 
 // DOCUMENT READY FUNCTION BELOW
-var Petty = Math.random();
-var Argus = ["Rock","Paper","Scissors"];
-var computerChoice=["Rock","Paper","Scissors"];
+var Counter =  Math.floor(Math.random()*3);
+// var userChoice = ["Rock","Paper","Scissors"];
+var Choice=["Rock","Paper","Scissors"];
 
-if(Petty<1/3){
-    console.log("computer Wins")
-    $()
+// var computerChoice=Choice[Counter];
+// console.log(Counter)
+// console.log(computerChoice)
+
+//if(Petty<1/3){
+//    console.log("computer Wins")
+//$()
   
 
 
@@ -28,8 +32,9 @@ if(Petty<1/3){
 
 
 $("#shoot").click(function(){
-    
-    $("#userChoice").text($("#input").val());
+    var userChoice = $("#input").val();
+    $("#userChoice").text(userChoice);
+    var computerChoice=Choice[Counter];
+console.log(Counter)
+console.log(computerChoice)
 });
-
-var userChoice
